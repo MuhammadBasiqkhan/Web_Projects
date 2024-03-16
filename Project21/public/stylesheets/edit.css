@@ -1,0 +1,146 @@
+body {
+    width: 1200px;
+    margin: 30px auto;
+    color: #555;
+  }
+  .container {
+    border: 1px solid #ddd;
+    background: #ececec;
+  }
+  .cf:after,
+  .cf:before {
+    content: '';
+    display: table;
+  }
+  .cf:after {
+    clear: both;
+  }
+  /* .cf {
+    *zoom: 1;
+  } */
+  .videos {
+    list-style-type: none;
+    width: 400px;
+    padding-left: 5px;
+  }
+  .videos li {
+    color: teal;
+    cursor: pointer;
+  }
+  .videos li > div {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 15px;
+  }
+  .section {
+    float: left;
+  }
+  label {
+    display: block;
+    margin: 20px 0 10px;
+  }
+  .icon {
+    display: block;
+    visibility: hidden;
+    width: 10px;
+    height: 10px;
+    background-color: #008c7e;
+  }
+  .item {
+    background: #f2f2f2;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+  }
+  .item.last {
+    border-bottom: none;
+  }
+  .item.active {
+    background: white;
+    border: none;
+    color: #555;
+    border-left: 5px solid #1abc9c;
+  }
+  li:hover {
+    color: #555;
+  }
+  li:hover .icon {
+    visibility: visible;
+  }
+  .info {
+    width: 700px;
+    float: left;
+    margin: 16px 0;
+    background: white;
+    padding: 10px 20px 20px 30px;
+  }
+  form {
+    display: block;
+    float: left;
+  }
+ 
+  .upload {
+    float: right;
+    margin-left: 30px;
+  
+  }
+  .upload button{
+   
+    margin-top: 30%;
+    min-width: 100px;
+    height: 40px;
+        border-radius: 12px ;
+    border: none;
+    transition: all 0.3s linear;
+  }
+  .upload button a{
+    color: white;
+    text-decoration: none;
+  }
+  .update{
+    background-color: blue;
+    color: white;
+    margin-top: 5px;
+    min-width: 80px;
+    height: 40px;
+        border-radius: 12px ;
+    border: none;
+    transition: all 0.3s linear;
+  }
+  .update:hover{
+    background-color: rgb(6, 6, 128);
+  }
+  .delete{
+    background-color: red;
+  }
+  .delete:hover{
+    background-color: rgb(129, 0, 0);
+  }
+  .title {
+    width: 380px;
+    color: #858383;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  .btn {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .btn input {
+    padding: 5px 10px;
+  }
+  
+
+
+  .pic {
+    width: 100px;
+    height: 100px;
+   border-radius: 50%;
+    margin: 12px  auto;
+    object-fit: cover;
+  }
+  .pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  

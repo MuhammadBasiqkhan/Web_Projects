@@ -1,0 +1,472 @@
+
+*{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* Header Section */
+
+/* Navbar Start */
+.navbar nav{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    padding: 4px ;
+}
+
+nav .naving{
+    height: 10.5vh;
+    width: 50%;
+  
+}
+
+
+/* Left Side of navbar */
+nav .leftnavbar{
+    display: flex;
+   
+    justify-content: flex-start;
+    align-items: center;
+    padding: 9px;
+    width: 25%;
+}
+
+.leftnavbar .container{
+    padding: 4px ;
+   
+    width: 50px;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+.leftnavbar .one{
+   border-radius: 0;
+}
+
+.leftnavbar button {
+    width: 100%; 
+    height: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+}
+.leftnavbar button:hover{
+    background-color:hsl(0, 0%, 18.82%) ;
+    border-radius: 50%;
+}
+.leftnavbar button:hover i{
+    background-color:hsl(0, 0%, 18.82%) ;
+}
+
+.leftnavbar button i {
+    font-size: 20px; 
+}
+
+/* left side complete  */
+
+
+/* Center Side of navbar */
+nav .centernavbar{
+    display: flex;
+    flex-direction: row;
+    padding: 9px;
+    width: 75%;
+    
+   
+}
+
+.centernavbar .search{
+    display: flex;
+
+        align-items: center;
+    justify-content: flex-start;
+
+    height: 45px ;
+  
+}
+
+
+.contain input{
+    width: 565px;
+    height: 35px;
+    border-radius: 23px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid hsl(0, 0%, 18.82%);
+    padding-left: 10px;
+    transition: border-color 0.3s ease; /* Optional: Add a smooth transition effect */
+}
+.contain input:focus {
+    border-color: blue;
+}
+
+.contain button{
+    width: 50px;
+    height: 35px;
+    border: 1px solid hsl(0,0%,18.82%);
+    background-color: hsl(0,0%,18.82%);
+    border-radius: 23px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.contain button:hover{
+    cursor: pointer;
+}
+
+.contain button i{
+    font-size: 15px ;
+    background-color:hsl(0,0%,18.82%) ;
+}
+
+.search .twoelement {
+    
+   margin-right:24px  ;
+}
+
+.search .microphone button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(0,0%,18.82%);
+}
+.search .microphone button i{
+   
+    background-color: hsl(0,0%,18.82%);
+}
+.search .microphone button:hover{
+    background-color: hsl(0, 2%, 30%);
+    cursor: pointer;
+    
+}
+.search .microphone button:hover i{
+    background-color: hsl(0, 2%, 30%);
+    cursor: pointer;
+    
+}
+
+
+
+/* center side complete */
+
+
+
+
+
+/* Rgiht Side of navbar */
+nav .rightnavbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+}
+
+.rightnavbar .vol{
+   
+    margin: 0 5px;
+}
+
+.rightnavbar button{
+    height: 40px ;
+    width: 40px ;
+    border-radius: 50%;
+    border: none;
+    
+}
+
+.rightnavbar button:hover{
+
+    background-color:hsl(0,0%,18.82%);
+    cursor: pointer;
+}
+.rightnavbar button:hover i 
+{ 
+    background-color: hsl(0,0%,18.82%);
+ }
+
+
+.rightnavbar button i{
+    font-size: 15px ;
+}
+
+.rightnavbar img{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    margin-right: 22px ;
+}
+
+
+
+
+/* left side is end */
+
+
+/* Header Section ends */
+
+
+
+/* FirsT Section */
+
+.FirstMainSection{
+    margin: 20px 0;
+    display:flex;
+    width: 100%;
+    height: 81vh;
+    
+}
+
+
+/* first side section */
+.FirstMainSection .firstsidesection{
+    width:80px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.firstsidesection .v1{
+    width: 70px;
+    height: 80px ;
+    margin-top: 5px ;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: 10px ;
+   border-radius: 15px ;
+   
+}
+
+
+.firstsidesection .v1 i{
+  
+   font-size: 20px ;
+}
+
+.firstsidesection .v1 button {
+    border: none;
+    outline: none; 
+    margin-bottom: 10px;
+}
+.firstsidesection .v1:hover {
+   
+    background-color: hsl(0,0%,18.82%);
+    cursor: pointer;
+}
+.firstsidesection .v1:hover i {
+   
+    background-color: hsl(0,0%,18.82%);
+  
+}
+.firstsidesection .v1:hover p {
+   
+    background-color: hsl(0,0%,18.82%);
+ 
+}
+
+
+
+/* Second and Third Side Section */
+.FirstMainSection .changer{
+    width: 100%;
+}
+
+/* Second Section */
+.FirstMainSection .secondsidesection{
+    height:40px ;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 12px ;
+}
+
+.secondsidesection .label{
+    margin-right: 25px ;
+    height: 24px;
+    padding: 0 4px ;
+    font-size: 15px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    
+}
+.secondsidesection .label{
+    margin-right: 21px ;
+    height: 24px;
+    padding: 0 5px ;
+    font-size: 15px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0,0%,18.82%);
+    cursor: pointer;
+    
+}
+.secondsidesection .label:hover{
+   background-color: hsl(0, 1%, 57%);
+    
+}
+
+.secondsidesection .on{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: black;
+}
+.secondsidesection .on:hover{
+    
+    background-color: hsl(0,0%,18.82%);
+}
+.secondsidesection .on:hover i{
+    
+    background-color: hsl(0,0%,18.82%);
+}
+
+
+.secondsidesection .off{
+   background-color: aliceblue;
+   color: black;
+}
+
+.secondsidesection .on button{
+    border: none;
+    outline: none; 
+
+}
+
+/* Second Section Ends */
+
+
+
+
+/* Third Section Start */
+.FirstMainSection .thirdsidesection {
+    height: 74vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+   
+
+}
+
+.thirdsidesection .maindivposter {
+    width: 32%;
+    height:35vh;
+    display: flex;
+    flex-direction: column;
+     margin-top: 5px ;
+     padding: 4px ;
+    
+}
+
+
+.thirdsidesection .maindivposter .poster {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 65%;
+}
+
+.thirdsidesection .maindivposter .poster img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.thirdsidesection .maindivposter .poster img:hover {
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.thirdsidesection .maindivposter .timedate {
+    position: absolute; 
+    bottom: 3px;
+    right: 13px;
+    border-radius: 4px;
+    width: 35px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-left: 23px;
+}
+
+.thirdsidesection .maindivposter .tumbnail {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 35%;
+    padding: 12px ;
+    font-size: 10px ;
+   color: gray;
+ 
+}
+ .tumbnail span {
+   
+    color: white;
+    font-size: 16px ;
+    font-weight: 300;
+
+ 
+}
+.tumbnail .tumbnailposter{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+.tumbnail .tumbnailposter img{
+    border-radius: 50%;
+
+}
+.tumbnail .tumbnailtittle{
+   margin-top: 12px ;
+   display: flex;
+   flex-direction: column;
+   margin-left: 11px ; 
+}
+
+.tumbnail .tumbnaildots{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.tumbnail .tumbnaildots button{
+
+    border: none;
+    outline: none;
+}
+.tumbnail .tumbnaildots button i{
+
+    font-size: 20px ;
+}
+
+/* First Section Completed  */
+
+
+
+
+
+/* Add this to your existing styles */
+
+
+
+
+/* Project completed Sucessfully 😘😘 */

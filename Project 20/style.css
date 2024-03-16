@@ -1,0 +1,1516 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+*::selection{
+    background-color: white;
+    color: #95C11E;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+  
+  
+}
+
+#nav{
+    width: 100%;
+    height: 22vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1vw;
+    font-weight: 100;
+    position: fixed;
+    transition: all 0.3s ease-in;
+    z-index: 22;
+    
+   
+}
+
+
+
+.displaycontainer{
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    z-index: 9;
+    background-color: #96c11e89;
+    filter: blur(70px);
+    transition: all 0.3s linear;
+    border-radius: 50%;
+}
+
+.dot{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    z-index: 77;
+    background-color: #95C11E;
+    border-radius: 50%;
+    transition: all 0.1s linear;
+}
+
+
+
+
+.firstelement{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2px 50px;
+    gap: 30px;
+    font-size: 0.8vw;
+   
+}
+.firstelement h1{
+    transition: all 0.3s linear;
+    vertical-align: center;
+    font-weight: 1000;
+}
+
+
+.contained{
+    width: 10%;
+    height: 100%;
+    padding: 4px ;
+      
+}
+.contained img{
+      height: 100%;  
+     width: 100%;
+    transition: all 0.3s linear;
+    transform: scale(1.1);
+}
+
+.contained img:hover{
+     transform: scale(1); 
+  
+}
+.secondelement{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+    justify-content: flex-end;
+}
+
+.secondelement button{
+    width: 16%;
+    height: 85%;
+    border-radius: 20px;
+    border: 2px solid #95C11E;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    margin: 0 4px;
+}
+
+.detained{
+    width: 17%;
+    height: 80%;
+}
+
+.btn{
+    width: 95%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid #95C11E;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    margin: 0 6px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    transition: all 0.3s linear;
+}
+.btn::after{
+    content: "";
+    width: 100%;
+    height: 250%;
+    top: 140%;
+    position: absolute;
+    background: linear-gradient(to bottom, #95C11E, rgb(7, 90, 7), #95C11E , #95C11E , #95C11E);
+    z-index: -1;
+    transition: all 0.3s linear;
+}
+.btn:hover::after{
+    top: -100%;
+}
+.btn:hover{
+    width: 93%;
+    color: #000000;
+}
+.btn:hover .dot{
+    width: 7px;
+}
+
+.contained2{
+    width: 30%;
+    padding: 4px ;
+    height: 100%;
+}
+.contained2{
+    width: 30%;
+    padding: 4px ;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.contained2 img{
+    height: 65%;  
+     width: 7vw;
+    transition: all 0.3s linear;
+   
+}
+
+.btner{
+    width: 80%;
+    height: 46%;
+    border: 2px solid #95C11E;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px ;
+    overflow: hidden;
+    z-index: 1;
+    font-size: 1.5vw;
+    position: relative;
+    transition: all 0.3s linear;
+}
+.btner::after{
+    content: "";
+    width: 100%;
+    height: 250%;
+    top: 140%;
+    position: absolute;
+    background: linear-gradient(to bottom, #95C11E, rgb(7, 90, 7), #95C11E , #95C11E , #95C11E);
+    z-index: -1;
+    transition: all 0.3s linear;
+    /* position: ab; */
+}
+.btner:hover::after{
+    top: -100%;
+}
+.btner:hover{
+    width: 93%;
+    color: #000000;
+}
+.btner:hover .dot{
+    width: 7px;
+}
+
+
+.maenudisplay{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 20;
+    background: linear-gradient(to top right , #9ad62c ,#93cf24, #1CA237);
+    opacity: 0;
+    transition: all 0.3s linear;
+    display: none;
+}
+
+.displayelementerrar{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    -webkit-text-stroke: 1px #000000;
+    font-size: 4.5vw;
+    transition: all 0.3s linear;
+
+   
+}
+.displayelementerrar h1{
+    font-weight: 1000;
+    transition: all 0.3s linear;
+}
+
+
+.displayelementerrar h1:hover{
+     color: #000000;
+     -webkit-text-stroke: 1px #ffffff;
+}
+
+
+
+
+
+
+
+ video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+    /* filter: brightness(60%); */
+    
+   
+}
+
+#main{
+    position: relative;
+    background-color: #00000060;
+}
+
+#page1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+   font-size: 2vw;
+    padding: 0 20px;
+    padding-top: 12%;
+    gap: 12px;
+  top: 20%;
+  text-align: center;
+  z-index: 10;
+}
+
+#page1 h1 {
+    font-size: 9vw;
+    position: relative;
+    z-index: 10; 
+    font-weight: bolder;
+    font-family: "Montserrat", sans-serif;
+
+    
+}
+
+#page1 h1::before {
+    content: "EAT. DRINK. PLAY.";
+    font-size: 9vw;
+    position: absolute;
+    color: #000000;
+    z-index: -1;
+    top: -4%;
+    right: 0;
+    left: -1%;
+    -webkit-text-stroke: 1px #95C11E;
+}
+
+.para{
+    width: 64%;
+    height: 32%;
+}
+
+#page1 p{
+    font-size: 1.7vw;
+
+}
+
+
+#page2{
+width: 100%;
+height: 100vh;
+z-index: 10;
+position: relative;
+display: flex;
+flex-direction: column;
+
+}
+
+
+.sectionone{
+    margin: 20px 0;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+   
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+.cont{
+    height: 25vh;
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+
+.cont h1{
+    font-size: 6rem;
+    display: inline-block;
+    -webkit-text-stroke: 1px white;
+    font-weight: 1000;
+    transition: all 0.4s linear;
+    text-transform: uppercase;
+    vertical-align: center;
+    margin-right: 5px;
+    color: #000000;
+    
+}
+
+.cont h1:hover{
+   
+    color: #95C11E;
+    -webkit-text-stroke: 1px #95C11E;
+   
+}
+
+
+
+
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+.sectiontwo{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    position: relative;
+    z-index: 10;
+}
+
+
+.aboutsect1{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutsect1 img{
+    width: 60%;
+    height: 40%;
+    border-radius: 12px;
+    filter: brightness(75%);
+}
+.aboutsect2{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+.about2{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  padding: 0 12px;
+     font-size: 1.5vw;
+    text-align: center;
+}
+.about2 p{
+    margin: 4px;
+}
+.about2 h1{
+    margin: 6px;
+    font-size: 5vw;
+}
+
+#page3{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+padding:6% 10%;
+gap: 4%;
+}
+
+.iamgecontainer{
+    width: 70%;
+    height: 100%;
+    border-radius: 12px ;
+    position: relative;
+    overflow: hidden;
+z-index: 1;
+    transition: all 0.3s linear;
+}
+
+.iamgecontainer:hover {
+    transform: rotate3d(-1 , 1 ,0 , 20deg);
+  
+}
+.iamgecontainer:hover img{
+    transform: scale(1.05);
+  
+}
+
+
+.iamgecontainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px ;
+  transition: all 0.3s linear;
+
+}
+
+.dispalybanner{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    border-radius: 12px ;
+    top: 0;
+    background-color: #0000003e;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 12px;
+    font-size: 1.5vw;
+    left: 0;
+    
+  z-index: 5;
+  
+}
+
+.dotnnullelemetn{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #95C11E;
+    z-index: 10;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s linear;
+    color: #000000;
+   font-size: 1.3vw;
+    gap: 15px;
+}
+.dotnnullelemetn h3,
+.dotnnullelemetn p{
+    
+    margin:0 12px;
+    color: #000000;
+
+
+}
+.dotnnullelemetn h3{
+    font-size: 2.5vw;
+    font-weight: 1000;
+}
+.dotnnullelemetn p{
+    line-height: 3.5vh;
+    transition: all 0.3s linear;
+}
+
+
+.iamgecontainer:hover .dotnnullelemetn{
+    opacity: 1;
+  
+}
+
+.btnnumer{
+    width: 100%;
+    height: 20%;
+    position: relative;
+}
+.btnnumer button{
+  width: 90px;
+  height: 90px;
+  border: 2px solid black;
+  border-radius: 50%;
+   position: absolute;
+   right: -7%;
+   top: -18%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: transparent;
+   
+transition: all 0.3s linear;
+   font-size: 2vw;
+}
+.btnnumer button:hover{
+background-color: white;
+}
+.btnnumer button:hover i{
+color: #95C11E;
+}
+.btnnumer button i{
+    color: #000000;
+}
+
+.iamgecontainer:hover button{
+  width: 95px;
+  height: 93px;
+}
+
+#page4{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imageslidercontainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgcontaiedslide{
+    width: 85%;
+    height: 52%;
+position: relative;
+    border-radius: 12px;
+    z-index: 23;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+   
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #91c10c27;
+    border-radius: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  
+    background-color: #b9f31a !important;
+    position: relative !important;
+    width:11px !important;
+    height: 11px !important;
+    transition: all 0.3s linear;
+}
+.swiper-pagination-bullet-active::after {
+  content: "";
+  width: 18px !important;
+  height: 18px !important;
+  position: absolute;
+   border:2px solid #b9f31a !important;
+   border-radius: 50%;
+   bottom: -36%;
+    left: -39%;
+    transition: all 0.3s linear;
+ 
+}
+
+.swiper-pagination-bullet {
+
+    width:12px !important;
+    height: 12px !important;
+
+}
+
+.contentslidercontainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 7%;
+    gap: 12px;
+    font-size: 1.7vw;
+}
+.contentslidercontainer h1{
+   font-weight: 1000;
+}
+.contentslidercontainer p{
+    line-height:5.5vh;
+}
+
+.name{
+    width: 45%;
+    height: 7vh;
+    border-radius: 25px;
+    border: 2px solid #95C11E;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 400;
+    margin: 0 6px;
+    position: relative;
+    z-index: 1;
+    font-size: 1.5vw;
+    overflow: hidden;
+
+    transition: all 0.3s linear;
+}
+
+
+.name::after{
+    content: "";
+    width: 100%;
+    height: 250%;
+    top: 140%;
+    position: absolute;
+    background: linear-gradient(to bottom, #95C11E, rgb(7, 90, 7), #95C11E , #95C11E , #95C11E);
+    z-index: -1;
+    transition: all 0.3s linear;
+}
+.name:hover::after{
+    top: -100%;
+}
+.name:hover{
+    width: 44%;
+    color: #000000;
+}
+.name:hover .dot{
+    width: 7px;
+}
+
+
+#page5{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2vw;
+    padding: 12%  19%;
+    text-align: center;
+    font-weight: 1000;
+    position: relative;
+    z-index: 10;
+}
+
+.contentder{
+    width: 100%;
+    height: 100%;
+}
+
+
+#page5 img{
+width: 4vw;
+height: 4vh;
+position: absolute;
+
+}
+#page5 p{
+    transition: all 0.3s linear;
+
+}
+
+.clon1{
+    top: 30%;
+    left: 15%;
+}
+.clon2{
+    bottom: 32%;
+    right: 15%;
+}
+
+#page6{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.pagesectionone{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 11%;
+    gap: 4%;
+    position: relative;
+}
+.pagesectionone h2{
+    position: absolute;
+ top: -6%;
+ font-size: 4.7vw;
+ font-weight: 1000;
+ z-index: 1;
+ text-transform: uppercase;
+ color: transparent;
+ -webkit-text-stroke: 1px white;
+ color: #000000;
+
+}
+
+.box{
+    width: 60%;
+    height: 70%;
+    border-radius: 12px ;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    z-index: 2;
+    text-transform: uppercase;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+   
+}
+
+
+.box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    scale: 1.1;
+    transition: all 0.3s linear;
+    filter: brightness(80%);
+   
+}
+
+.box:hover img{
+    scale: 1;
+}
+
+
+
+
+.box p{
+    color: #000000;
+   font-weight: 1000;
+   font-size: 2vw;
+   transition: all 0.3s linear;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   border-radius: 12px ;
+   background-color: #b9f31a;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 5;
+}
+.box:hover p{
+    color: #ffffff;
+   background-color: transparent;
+}
+
+.pagesectiontwo{
+    width: 100%;
+    height: 50vh;
+   padding-top: 50px ;
+
+}
+
+.footer{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top right , #b1ff1f ,#96d81a, #1CA237);
+    position: relative;
+    padding: 0 5%;
+}
+.footer img{
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    left: -16%;
+   z-index: 1;
+  
+}
+.footersection1{
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+.footersection2{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    color: #000000;position: relative;
+    z-index: 4;
+    justify-content: space-around;
+    align-items: center;
+}
+.footersection2 p{
+  
+    margin: 0 5px;
+    color: #000000;position: relative;
+    transition: all 0.3s linear;
+   
+}
+
+.his:hover{
+    color: #fffdfd;
+  
+}
+.his{
+    margin-left: 12px ;
+  
+}
+.her:hover{
+    color: #fffdfd;
+}
+
+.footerdot{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+  
+}
+
+.elementer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+  
+}
+
+.imagcontainedelement{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.imagcontainedelement img{
+    width: 70%;
+    height: 70%;
+    position: relative;
+    left: 0;
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+}
+.imagcontainedelement img:hover{
+    width: 70%;
+    height: 70%;
+    position: relative;
+    left: 0;
+    transform: scale(1);
+}
+.imagcontainedelementer{
+    width: 100%;
+    height: 30%;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+padding: 0 12%;
+font-size: 3vw;
+gap: 1vw;
+
+
+}
+.imagcontainedelementer i{
+    color: #000000;
+    position: relative;
+    transition: all 0.3s linear;
+    z-index: 5;
+}
+.imagcontainedelementer .enter:hover{
+    color: #fffdfd;
+
+}
+
+.dot1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 1.2vw;
+    color: #000000;
+    font-weight: 1000;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 2% 2px;
+    transition: all 0.3s linear;
+}
+.dot1 h2{
+
+    color: #000000;
+    transition: all 0.3s linear;
+    position: relative;
+    z-index: 5;
+    font-weight: 1000;
+    
+}
+.dot1 p{
+
+    color: #000000;
+    font-weight: 100;
+    transition: all 0.3s linear;
+    
+}
+.dot1 h2:hover{
+
+    color: #ffffff;
+    
+}
+
+
+.anothersectionofimage{
+    width: 100%;
+    height: 50%;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4%;
+}
+.anothersectionofimage img{
+    width: 50%;
+    height: 100%;
+    border-radius: 12px;
+    /* display: flex; */
+    margin: 6px ;
+    
+}
+
+
+
+
+@media screen and (max-width: 600px){
+    .secondelement{
+        display: none;
+    }
+
+    #nav{
+        /* height: 7vh; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .firstelement {
+       padding: 2% ;
+        height: 60%;
+    }
+    .firstelement h1{
+       
+       display: none;
+    }
+
+    .contained{
+        width: 30%;
+    }
+
+    .contained2{
+       
+      
+        display: flex;
+       
+    }
+
+    #page1 h3{
+        font-size: 3vw;
+    }
+
+    #page1 p {
+        font-size: 2.5vw;
+    }
+
+    #page1 h1 {
+        font-size: 13vw;
+    }
+
+    
+#page1 h1::before {
+
+    font-size: 13vw;
+}
+
+.cont h1 {
+    font-size: 3rem;
+}
+
+.cont {
+    height: 11vh;
+}
+
+.aboutsect1 {
+       
+    display: none;
+}
+
+.aboutsect2 {
+    width: 100%;
+}
+
+.about2 {
+   
+    height: 50%;
+}
+
+.about2 {
+    height: 50%;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.about2 p {
+   
+    text-align: left;
+    font-size: 3vw;
+}
+
+.about2 h1 {
+    margin: 6px;
+    font-size: 7vw;
+}
+
+.anothersectionofimage {
+    display: flex;
+    width: 100%;
+    height: 41%;
+}
+
+.anothersectionofimage img{
+    width: 50%;
+    height: 87%;
+    border-radius: 12px;
+    /* display: flex; */
+    margin: 6px ;
+    
+}
+
+
+#page3{
+    display: flex;
+    flex-direction: column;
+    padding: 6% 2%;
+   
+        width: 100%;
+        height: 80vh;
+}
+.iamgecontainer{
+    width: 100%;
+    height: 50%;
+}
+
+.dispalybanner {  
+    font-size: 3.5vw;
+}
+.dotnnullelemetn    {
+     gap: 9px;
+}
+.dotnnullelemetn h3 {
+    font-size: 4vw;
+}
+.dotnnullelemetn p {
+    line-height: 1.8vh;
+    font-size: 3vw;
+}
+
+
+.btnnumer button {
+    position: absolute;
+    right: -6%;
+    top: -45%;
+    font-size: 5vw;
+}
+
+
+#page4{
+    display: flex;
+    flex-direction: column;
+}
+
+.imageslidercontainer{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.contentslidercontainer {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 2%;
+
+    font-size: 3vw;
+    line-height: 1vh;
+}
+.contentslidercontainer .name{
+    width: 30%;
+    height: 12%;
+    
+}
+.imgcontaiedslide{
+    width: 100%;
+    height: 75%;
+}
+
+.contentslidercontainer p {
+    line-height: 4.5vh;
+}
+
+
+
+#page5 {
+   
+    height: 32vh;
+}
+
+
+.pagesectionone {
+    width: 100%;
+    height: 39vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12px 11%;
+    gap: 4%;
+    position: relative;
+}
+.box{
+    width: 100%;
+}
+
+.box p{
+font-size: 5vw;
+}
+
+
+.footersection1{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerdot{
+    width: 100%;
+    height: 50%;
+}
+
+.elementer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 25%;
+    padding: 0;
+    flex-direction: row;
+}
+
+
+.imagcontainedelementer {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 12%;
+    font-size: 3vw;
+    gap: 1vw;
+}
+
+.imagcontainedelement {
+    width: 100%;
+    height: 100%;
+}
+.footersection2 p {
+    font-size: 2vw;
+}
+
+
+.maenudisplay{
+display: flex;
+}
+
+}
+
+
+
+@media screen and (max-width: 1000px) and (min-width: 601px) {
+    .firstelement h1{
+        font-size: 1.4vw;
+     }
+    .firstelement{
+        padding: 2% ;
+     }
+
+     .contained {
+        width: 13%;
+    }
+
+    .btn {
+        width: 100%;
+        height: 60%;
+    }
+
+    .secondelement {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        align-items: center;
+        padding: 0 80px;
+        gap: 3px;
+        justify-content: center;
+    }
+
+    #page1 h3{
+        font-size: 3vw;
+    }
+
+    #page1 p {
+        font-size: 2.5vw;
+    }
+
+    .aboutsect1 {
+       
+        display: none;
+    }
+
+    .aboutsect2 {
+        width: 100%;
+    }
+
+    .about2 {
+       
+        height: 50%;
+    }
+    
+    
+.about2 {
+    height: 50%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.about2 p {
+   
+    text-align: left;
+    font-size: 3vw;
+}
+
+.about2 h1 {
+    margin: 6px;
+    font-size: 7vw;
+}
+
+
+
+.anothersectionofimage {
+    display: flex;
+    
+} 
+
+#page3{
+    display: flex;
+    flex-direction: column;
+    padding: 2% 2%;
+}
+.iamgecontainer{
+    width: 100%;
+    height: 50%;
+}
+
+.dispalybanner {  
+    font-size: 3.5vw;
+}
+.dotnnullelemetn {
+    gap: 8px;
+}
+.dotnnullelemetn h3 {
+    font-size: 4vw;
+}
+.dotnnullelemetn p {
+    line-height: 2.8vh;
+    font-size: 3vw;
+}
+
+.cont h1 {
+    font-size: 4rem;
+}
+
+
+.btnnumer button {
+ 
+    position: absolute;
+    right: -4%;
+    top: -37%;
+    font-size: 3vw;
+}
+
+.iamgecontainer:hover button {
+    width: 123px;
+    height: 121px;
+}
+
+
+#page4{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.contentslidercontainer {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 2%;
+
+    font-size: 3vw;
+    line-height: 1vh;
+}
+
+.imageslidercontainer {
+    padding: 2%;
+    width: 100%;
+    height: 50%;
+}
+
+.imgcontaiedslide{
+    width: 100%;
+    height: 100%;
+}
+
+.name {
+    width: 30%;
+    height: 5.5vh;
+    border-radius: 38px;
+}
+.name:hover{
+    width: 28%;
+    
+}
+
+
+
+#page5 {
+   
+    height: 50vh;
+}
+
+
+.pagesectionone {
+    width: 100%;
+    height: 49vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12px 11%;
+    gap: 4%;
+    position: relative;
+}
+.box{
+    width: 100%;
+}
+
+.box p{
+font-size: 5vw;
+}
+
+
+.imagcontainedelement img {
+    width: 70%;
+    height: 70%;
+    position: relative;
+    left: 21px;
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+}
+
+.imagcontainedelement img:hover {
+    width: 70%;
+    height: 70%;
+    left: 21px;
+    position: relative;
+    transform: scale(1);
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top right, #b1ff1f, #96d81a, #1CA237);
+    position: relative;
+    padding: 0 1%;
+}
+
+
+.footersection2 p {
+    font-size: 2vw;
+}
+
+
+}

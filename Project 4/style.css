@@ -1,0 +1,194 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    background: url('./images/OIG.jpg');
+    color: white;
+}
+
+/* Header*/
+
+/*  Navbar Starts  */
+.navbar nav {
+    display: flex;
+    width: 100%;
+    height: 73px;
+    align-items: center;
+    color: white;
+}
+
+/* left side of Navbar */
+.navbar .leftside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 126px;
+}
+
+/* Center side of Navbar */
+.navbar .Centerside {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 51px;
+}
+
+.navbar .Centerside .search {
+    padding: 12px 12px;
+}
+
+.navbar .Centerside input {
+    width: 447px;
+    height: 35px;
+    border: none;
+    border-radius: 23px;
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0; 
+    padding-left: 12px;
+    background-color: gainsboro;
+}
+
+.navbar .Centerside input:active {
+    border: none;
+}
+
+.navbar .Centerside button {
+    border-radius: 23px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 35px;
+    width: 54px;
+    border: none;
+    padding: 0;
+    margin-left: -4px;
+    background-color: rgb(205, 200, 200);
+}
+
+.navbar .Centerside button:hover {
+    background-color: black;
+    color: red;
+    border: 1px solid red;
+
+}
+
+
+/* Right side of navbar */
+.navbar .rightside {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    height: 80px;
+}
+
+.navbar .rightside ul {
+    display: flex;
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.navbar .rightside ul li {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar .rightside ul li:hover {
+    color: red;
+
+}
+
+.navbar .rightside .login {
+    display: flex;
+    list-style: none;
+    margin-right: 5px;
+    border: none;
+}
+
+.navbar .rightside .login button {
+    margin-right: 10px;
+    font-size: 18px;
+    background-color: gainsboro;
+    border: 1px solid gainsboro;
+    padding: 6px;
+    border-radius: 9px;
+}
+
+.navbar .rightside .login button:hover {
+    background-color: black;
+    color: red;
+    border: 1px solid red;
+}
+
+/* Navbar Ends */
+
+
+/* First Section */
+.FirstSection {
+    display: flex;
+    width: 96%;
+    height: 81vh;
+    padding: 20px;
+}
+
+
+/* first Left section */
+.FirstSection .firstleftsect {
+    width: 40%;
+    display: flex;
+    padding: 34px;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstleftsect .container {
+    font-size: 19px;
+}
+
+.firstleftsect .container span {
+    display: flex;
+    flex-direction: column;
+    font-size: 41px;
+    color: red;
+    text-decoration: underline;
+}
+
+.firstleftsect .container button {
+    display: flex;
+    font-size: 18px;
+    border: none;
+    flex-direction: row;
+    padding: 12px;
+    border: 1px solid gainsboro;
+    border-radius: 29px;
+    margin-left: 5px;
+}
+
+.firstleftsect .container .contain {
+    display: flex;
+    font-size: 25px;
+    flex-direction: row;
+}
+
+.firstleftsect .container button:hover {
+    background-color: black;
+    color: red;
+    border: 1px solid red;
+
+}
+
+
+
+/* first Right Section  */
+.FirstSection .firstrightsect {
+    width: 56%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.FirstSection .firstrightsect img {
+    border-radius: 50%;
+}

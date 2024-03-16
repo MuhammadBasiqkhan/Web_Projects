@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/edit.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <title>Adit Account</title>
+</head>
+
+<body>
+
+    <div class="container cf">
+        <div class="section">
+            <ul class="videos">
+                <li>
+                    <div>
+                        <span class="icon"></span>
+                    </div>
+                    <div class="item active">
+                        Edit Your Details
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="info cf">
+            <form action="/updatedata" method="post">
+                <div>
+                    <label for="title">Username</label>
+                    <input type="text" class="title" name="username" value="<%= user.username %>" readonly>
+                    <button type="button" class="edit">Edit</button>
+                </div>
+                <div>
+                    <label for="content">Fullname</label>
+                    <input type="text" name="fullname" class="title" value="<%= user.fullname %>" readonly>
+                    <button type="button" class="edit">Edit</button>
+                </div>
+                <div>
+                    <label for="content">Email</label>
+                    <input type="email" name="email" class="title" value="<%= user.email %>" readonly>
+                    <button type="button" class="edit">Edit</button>
+                </div>
+                <div class="btn">
+
+                    <button type="submit" class="update">Update</button>
+                </div>
+            </form>
+            <div class="upload">
+                <div class="pic">
+                    <img src="./images/uploads/<%= user.dp %>" alt="" srcset="">
+                </div>
+               
+                <button class="delete"><a href="/DeleteAccount">Delete Account</a></button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/javascripts/edit.js"></script>
+</body>
+
+</html>

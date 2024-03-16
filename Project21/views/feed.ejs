@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/feed.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <title>feed</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left side">
+        <div class="element">
+          <img src="/images/R.png" alt="" srcset="">
+
+        </div>
+        <p class="parag">Printrest</p>
+      </div>
+      <div class="middle side">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <input type="text" name="" id="" placeholder="Search">
+      </div>
+      <div class="right side">
+        <a href="/feed">Feed</a>
+        <a href="/profile?msg=profile">Profile</a>
+        <img id="profileiamge" src="./images/uploads/<%= user.dp %>" alt="" srcset="">
+
+        <div class="displayUserdata">
+          <div class="displayprofile">
+            <a class="profilepager" href="/profile?msg=profile">
+              <img src="./images/uploads/<%= user.dp %>" alt="" srcset="">
+            </a>
+          </div>
+
+          <p>@<%= user.username %>
+          </p>
+          <p>
+            <%= user.email %>
+          </p>
+          <div class="Acount">
+            <a class="Ancher" href="/">Add Acount</a>
+          </div>
+          <div class="logout">
+            <a class="Ancher" href="/login">Logout</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="container">
+
+    <% post.forEach(posts=> { %>
+      <div class="column">
+        <div class="content-wrapper">
+          <div class="image-wrapper">
+            <div class="overlay">
+              <div>
+                <% if(posts.user.username == user.username){ %>
+                  <p class="username">
+                    @<%= posts.user.username %>  (You) 
+                  </p>
+                  <% } %>
+                <% if(posts.user.username != user.username){ %>
+                  <p class="username">
+                    @<%= posts.user.username %>
+                  </p>
+                  <% } %>
+                
+                <button class="save">Save</button>
+
+
+              </div>
+              <div>
+                <button class="round-button">
+                  <a href="" download="./images/uploads/<%=posts.postImage%>">
+
+                    <img src="https://cdn-icons-png.flaticon.com/512/3580/3580382.png" alt="">
+                  </a>
+                </button>
+                
+              </div>
+            </div>
+            <img class="postimage" src="./images/uploads/<%=posts.postImage%>" alt="">
+          </div>
+          <p class="postText">
+            <%= posts.postText %>
+          </p>
+        </div>
+      </div>
+
+      <div class="datamanagerdisplay">
+        <div class="maindisplaydata">
+          <img src="./images/uploads/<%=posts.postImage%>" alt="" srcset="">
+        </div>
+        <div class="displayinformation">
+          <div class="displaycutscreen">
+            <div class="cancelscreen">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="mainuserdata">
+            <div class="profileiamge">
+              <img src="./images/uploads/<%= posts.user.dp %>" alt="" srcset="">
+            </div>
+            <div class="profileUserndata">
+              <% if(posts.user.username == user.username){ %>
+                 <h5> @<%= posts.user.username %>  (You)</h5>
+              <% } %>
+              <% if(posts.user.username != user.username){ %>
+                 <h5> @<%= posts.user.username %> </h5>
+              <% } %>
+                  
+              <p>Post Created at:<%=posts.createdAt %> . <i class="fa-solid fa-earth-americas"></i></p>
+            </div>
+          </div>
+
+          <div class="maincontent">
+            <p>
+              <%= posts.postText %>
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="displaydailogbox">
+        <div class="dismaincontent">
+          <p>Are you sure you want to save this Post?</p>
+          <div class="maindatayesyno">
+            <button class="yes">Yes</button>
+            <button class="no">No</button>
+          </div>
+        </div>
+      </div>
+
+
+      <% }) %>
+  </div>
+
+
+  <div class="alert alert-success">
+    <div class="tickmark">
+      <i class="fa-solid fa-check"></i>
+    </div>
+
+    <p>Saved post successfully!</p>
+
+  </div>
+  <script src="/javascripts/feed.js"></script>
+</body>
+
+</html>

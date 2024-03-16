@@ -1,0 +1,747 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+    color: azure;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background-color:  #18191A  ;
+}
+
+
+
+
+/* Header Section  */
+
+
+/* Navbar */
+.navbar nav{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    background-color:  #18191A;
+}
+
+.navbar .nav{
+    display: flex;
+    width: 50%;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    padding: 4px ;
+
+}
+
+/* leftside navbar */
+.navbar .leftsidenav{
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo{
+    margin: 0 3px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 41px;
+    height: 41px;
+    border-radius:50% ;
+}
+
+.logo img{
+    width: 39px ;
+    height: 36px ;
+    
+}
+.navbar .icon:hover i{
+    background-color: hsl(0, 0%, 18.82%);
+    
+}
+.navbar .icon:hover {
+    background-color: hsl(0, 0%, 18.82%);
+    
+}
+
+/* leftside Navbar Ends */
+
+
+/* center side navabr  */
+
+.navbar .centersidenav {
+    width: 80%;
+}
+
+.navbar .centersidenav ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.centersidenav ul li {
+    list-style: none;
+    margin: 0 12px;
+    width: 15%;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 12px ;
+}
+.centersidenav ul li:hover{
+    transition: all 0.3 ease;
+    background-color: hsl(0, 0%, 18.82%);
+}
+.centersidenav ul li:hover i{
+    background-color: hsl(0, 0%, 18.82%);
+}
+
+.centersidenav ul li i {
+    font-size: large;
+}
+
+.centersidenav ul li:active i {
+    color: rgb(43, 43, 240);
+}
+
+.centersidenav ul li .content {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 31px;
+    background-color: #dce1e1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px ;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+.centersidenav ul li .content p{
+
+    background-color: #dce1e1;
+  color: black;
+  font-size: small;
+ 
+}
+
+.centersidenav ul li:hover .content {
+    opacity: 0.7;
+    display: flex;
+    
+}
+
+
+/* Center Side Ends */
+
+
+
+/* Third Side   */
+
+ .navbar .rightsidenav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 30%;
+}
+
+.rightsidenav .logo {
+    position: relative;
+}
+
+.logo img{
+    border-radius: 50%;
+}
+
+.rightsidenav .logo:hover .container {
+    display: flex;
+    opacity: 0.7;
+    
+}
+
+.rightsidenav .container {
+    position: absolute;
+    top: 100%;
+    left: 19%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 31px;
+    background-color: #dce1e1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px ;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.container p{
+
+    background-color: #dce1e1;
+  color: black;
+  font-size: small;
+ 
+}
+
+
+/* third side ends */
+
+/* Header Section Ends */
+
+
+/* Main layout of facebook */
+
+.Mainlayout{
+    margin-top: 10px;
+    display: flex;
+    height: 89vh;
+    padding: 7px ;
+
+}
+
+.Mainlayout .main{
+    width: 50%;
+    height: initial;
+}
+
+/* First Main Section Starts */
+
+.Mainlayout .FirstMainsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5px ;
+    width: 25%;
+
+}
+
+
+.FirstMainsection .maincontent{
+    width: initial;
+    border-radius: 6px ;
+    height: 45px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 12px ;
+
+}
+
+.maincontent:hover{
+    background-color:hsl(0, 0%, 18.82%) ;
+}
+
+
+.maincontent a{
+    display: flex;
+    text-decoration: none;
+    margin: 4px ;
+}
+
+.maincontent img{
+  
+    display: flex;
+    width: 35px;
+    height: 30px ;
+    border-radius: 50%;
+    margin-right: 6px ;
+}
+.maincontent p{
+   
+    font-size: 12px ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+ 
+.or img{
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+}
+
+.more i{
+    display: flex;
+    width: 30px;
+    height: 30px ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6px ;
+}
+
+.shortcuts .in{
+   
+    width: initial;
+    margin-top: 12px;
+    border: 1px solid rgb(142, 140, 140);
+    margin-bottom: 12px;
+}
+
+.cookies{
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+
+/* First Main Section Ends */
+
+
+
+/* Second Main Section Starts */
+
+
+ .Mainlayout .SecondMainsection {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.SecondMainsection .dent {
+    width: initial;
+    height: 50%;
+}
+
+.SecondMainsection .stories {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 5px 0;
+}
+
+.MainStory:hover {
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.MainStory:hover .picture img {
+    transform: scale(1.01); 
+    transition: transform 0.3s ease;
+}
+
+.stories .MainStory {
+    display: flex;
+    width: 60%;
+    height: inherit;
+    margin: 4px;
+    border-radius: 12px;
+    flex-direction: column;
+    position: relative;
+}
+
+.MainStory .pluscontent {
+    position: absolute;
+    top: 175px;
+    left: 60px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(22, 61, 218);
+    border: 5px solid #242526;
+    border-bottom-color: none;
+    z-index: 1;
+}
+
+.MainStory .picture {
+    width: initial;
+    height: 99%;
+    position: relative;
+}
+
+.MainStory .picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.MainStory .storycontent {
+    width: initial;
+    height: 30%;
+    background-color: #242526;
+    border-radius: 12px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tween{
+    height: 100%;
+}
+
+.tween .picture img{
+   
+    border-radius: 12px;
+}
+
+.tweeniing{
+    width: 52px;
+    height: 50px;
+    border: 4px solid blue;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+}
+
+.tweeniing img{
+    
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+.tweeingcontent{
+    font-size: 14px;
+    position: absolute;
+    top: 224px;
+    left: 4px;
+  
+    font-weight: 700;
+}
+
+
+.backtonext{
+    position: absolute;
+    top: 120px;
+    left: 75px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242526;
+    border-bottom-color: none;
+    z-index: 1;
+}
+
+.backtonext:hover{
+    background-color: hsl(0, 0%, 18.82%);
+}
+
+
+
+/* Story Ends */
+
+/* how posting section */
+.SecondMainsection .howposting{
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    padding: 9px 12px ;
+}
+
+.howposting .postinghere{
+    width: 90%;
+    height:100%;
+    padding:6px 20px;
+    border-radius: 12px;
+    background-color: hsl(0, 0%, 13%);
+}
+
+.postinghere .howpostdo{
+    display: flex;
+    padding:4px;
+    width: 100%;
+    height: 45px ;
+    justify-content: center;
+    align-content: center;
+}
+
+.howpostdo img{
+    border-radius: 50%;
+    margin-right: 12px ;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.howpostdo input{
+    border-radius: 12px ;
+    margin-right: 12px ;
+    height:29px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 4px;
+    background-color: hsla(0, 0%, 18%, 0.797);
+    border: none;
+    padding: 0 6px ;
+    color: white;
+}
+
+.howpostdo input:hover{
+    background-color: hsl(0, 0%, 18.82%);
+}
+
+.distance{
+    width: 100%;
+    border: 1px solid rgb(142, 140, 140);
+    margin: 5px 0;
+}
+
+.postingfeature{
+    display: flex;
+    padding:4px;
+    width: 100%;
+    height: 45px ;
+}
+
+.postingfeature .vedio{
+    width: 50%;
+    height: 40px;
+    border-radius: 12px ;
+    margin: 0 4px;
+}
+
+.vedio:hover{
+    background-color: hsl(0, 0%, 18.82%);
+}
+
+
+.postingfeature .livevedio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.postingfeature .photovedio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.postingfeature .feelingactivity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.livevedio i{
+    color: red;
+    margin-right: 10px;
+}
+.photovedio i{
+    color: rgb(37, 189, 37);
+    margin-right: 10px;
+}
+.feelingactivity i{
+    color: rgb(215, 168, 13);
+    margin-right: 10px;
+}
+
+/* posting setting ends  */
+
+
+
+
+/* Second Main section Ends */
+.Mainlayout .ThirdMainsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5px ;
+    width: 25%;
+
+}
+.ThirdMainsection .contactdetail{
+    width: initial;
+    border-radius: 6px ;
+    height: 45px ;
+    display: flex;
+    flex-direction: row;
+    padding: 12px ;
+    margin: 0 12px;
+}
+.contactdetail .con{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contactdetail .conte{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 44px;
+    color: #dce1e1;
+}
+
+.sear {
+    display: flex;
+    width: 30px;
+    height:30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7px ;
+    border-radius: 50%;
+    color: #dce1e1;
+}
+
+.sear:hover {
+    background-color: hsl(0, 0%, 18.82%);
+    
+}
+
+.optioning:hover ~ .searchoption ,
+.contented:hover ~ .searchcontent {
+
+    display: flex;
+    opacity: 0.7;
+}
+
+
+
+ .coontenter{
+    width: 20% ;
+    height: 30px ;
+    position: absolute;
+    background-color:#dce1e1 ;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .coontenter p{
+    color: #18191A;
+    font-size: small;
+ }
+
+ .searchoption{
+    width: 7%;
+    right: 12px;
+    bottom: 485px;
+    border-radius: 9px ;
+ }
+ .searchcontent{
+    width: 20%;
+    right: 95px;
+    bottom: 485px;
+    border-radius: 9px ;
+ }
+.contactdetail .sear i{
+
+    color: #dce1e1;
+    font-size: 14px;
+}
+
+
+
+.contactdetail .twoer{
+    font-size: 8px;
+    height: 25px ;
+    width: 100%;
+    display: flex;
+    border-radius: 6px;
+
+}
+.twoer:hover{
+    background-color: hsl(0, 0%, 18.82%);
+}
+.twoer img{
+    width: 23px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+   
+}
+.twoer p{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: initial;
+    height: inherit;
+    margin-left: 10px;
+}
+
+.twoer a{
+text-decoration: none;
+    display: flex;
+
+}
+
+.ThirdMainsection .barline{
+    border: 1px solid rgb(142, 140, 140);
+    width: 85%;
+    margin: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.MessageButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right: 46px;
+    bottom: 21px;
+    background-color: hsl(0, 0%, 18.82%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; 
+}
+
+.Mesagebox {
+    width: 119px;
+    height: 50px;
+    position: absolute;
+    border-radius: 12px;
+    right: 104px;
+    bottom: 21px;
+    display: flex;
+    opacity: 0;
+    background-color: #dce1e1;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease; 
+}
+
+.Mesagebox p{
+    color: #242526;
+}
+.MessageButton:hover {
+    background-color: hsl(0, 0%, 30%); 
+}
+
+.MessageButton:hover ~ .Mesagebox {
+    opacity: 0.7;
+}

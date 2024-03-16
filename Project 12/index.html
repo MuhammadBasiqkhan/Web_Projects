@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Notes App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="contain">
+            <div class="firstcont">
+                <img src="./images/notes.png" alt="" srcset="">
+                <p>Note App</p>
+            </div>
+            <div class="firstcont otheercontent">
+                <button class="createnotes">
+                    <i class="fa-solid fa-plus"></i>
+                    <div class="hovercontent">
+                        <p>Create Notes</p>
+                    </div>
+                </button>
+                <button class="createnotes">
+                    <i class="fa-regular fa-floppy-disk"></i>
+                    <div class="hovercontent">
+                        <p>Save Notes</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div class="contain thrcont">
+            <div class="inputfeiled">
+                <div class="input">
+                    <div class="inputbtn">
+                        <button class="btnground" value="bold"><i class="fa-solid fa-bold"></i></button>
+                        <button class="btnground" value="italic"><i class="fa-solid fa-italic"></i></button>
+                        <button class="btnground" value="underline"><i class="fa-solid fa-underline"></i></button>
+                        <button class="btnground" value="left-align-btn"><i class="fa-solid fa-align-left"></i></button>
+                        <button class="btnground" value="center-align-btn"><i
+                                class="fa-solid fa-align-center"></i></button>
+                        <button class="btnground" value="right-align-btn"><i
+                                class="fa-solid fa-align-right"></i></button>
+                        <button class="btnground" value="superscript"><i class="fa-solid fa-superscript"></i></button>
+                        <button class="btnground" value="subscript"><i class="fa-solid fa-subscript"></i></button>
+                        <button class="btnground" value="strikethrough"><i
+                                class="fa-solid fa-strikethrough"></i></button>
+                        <button class="btnground" value="list"><i class="fa-solid fa-list"></i></button>
+                        <button class="btnground" value="numberinglist"><i class="fa-solid fa-list-ol"></i></button>
+                        <button class="btnground" value="link"><i class="fa-solid fa-link"></i></button>
+                        <button class="btnground" value="cancell"><i class="fa-solid fa-link-slash"></i></button>
+                    </div>
+                    <div class="inputbtn">
+
+
+
+                        <div class="fiv">
+                            <p>Font Color:</p>
+                            <input type="color" name="" id="fontcolor">
+                        </div>
+                        <div class="fiv">
+                            <p>Highlight Color:</p>
+                            <input type="color" name="" id="Highlightcolor">
+                        </div>
+
+                        <select id="select1" class="btngrounder btndn">
+                            <option value="H1">H1</option>
+                            <option value="H2">H2</option>
+                            <option value="H3">H3</option>
+                            <option value="H4">H4</option>
+                            <option value="H5">H5</option>
+                            <option value="H6">H6</option>
+                        </select>
+                        <select id="select2" class="btngrounder">
+                            <option value="Times New Roman">Times New Roman</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Franklin Gothic Medium">Franklin Gothic Medium</option>
+                            <option value="sans-serif">sans-serif</option>
+                            <option value="Verdana">Verdana</option>
+                            <option value="Tahoma">Tahoma</option>
+                            <option value="Courier New">Courier New</option>
+                            <option value="Arial Narrow">Arial Narrow</option>
+                        </select>
+                        <select id="select3" class="btngrounder btndn">
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="14">14</option>
+                            <option value="16">16</option>
+                            <option value="18">18</option>
+                            <option value="20">20</option>
+                            <option value="22">22</option>
+                            <option value="24">24</option>
+                            <option value="26">26</option>
+                            <option value="28">28</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputdata">
+                    <!-- <textarea name="" id="textareas" cols="100" rows="20" ></textarea> -->
+                    <div id="editor" class="texting" contenteditable="true"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

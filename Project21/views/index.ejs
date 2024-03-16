@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <title>Pinterest Login</title>
+  </head>
+  <body>
+    <div class="containermain">
+      <div class="contented">
+        <!--pinterest logo-->
+        <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="pin logo" class="img1" />
+        <p class="header">Create a New Account</p>
+
+        <form action="/register" method="post">
+          <input type="email" name="email" placeholder="Email" class="detail" /><br />
+          <input type="text" name="username" placeholder="Username" class="detail" />
+          <input type="text" name="fullname" placeholder="Fullname" class="detail" />
+          <input type="password" name="password" placeholder="Password" class="detail" />
+          <input type="submit" value="Sign in" class="btn int"/>
+        </form>
+        
+
+        <footer>
+          <p>
+            By continuing, you agree to Pinterest's
+            <b>Terms of Service, Privacy policy.</b>
+          </p>
+          <hr />
+          <p>Not on Pinterest yet? <a href="/login">Login</a></p>
+        </footer>
+      </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+  </body>
+</html>

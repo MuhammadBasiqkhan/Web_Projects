@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --bgcolor:black;
+    --redbtnhovercolor:rgba(255, 0, 0, 0.847);
+    --fontcolor:white;
+}
+
+body{
+    color: var(--fontcolor);
+    
+    background-color: var(--bgcolor);
+}
+
+
+
+.main{
+    background-image: url(./images/background.jpg);
+    background-size: max(1500px ,100vw);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+}
+
+.main .box{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+   
+}
+
+nav{
+    display: flex;
+    width: 80vw;
+    height: 10%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+
+}
+
+
+.naving{
+    width:40%;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.leftsidenav img{
+    width: 30%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.naving button{
+    width: 15%;
+    height: 80%;
+    color: white;
+    background-color: red;
+    border-radius: 6px;
+    font-size: 1rem;
+    position: relative;
+    z-index: 10;
+
+    border: none;
+}
+.naving button:hover{
+
+    background-color: var(--redbtnhovercolor);
+    transition: all 0.3s ease-in ;
+
+}
+
+@media only screen and (max-width:1400px) {
+    .naving button{
+        width: 30%;
+    }
+    .leftsidenav img{
+        width: 40%;
+        height: 78%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    nav{
+       
+        width: 100vw;
+        margin: 0;
+    
+    }
+
+    .naving {
+        width: 30%;
+    }
+    
+    .naving button{
+        width: 40%;
+    }
+    .leftsidenav img{
+        width: 50%;
+        height: 78%;
+    }
+}
+@media only screen and (max-width:700px) {
+  
+    .naving button{
+        width: 70%;
+        font-size: 0.9rem;
+    }
+    .leftsidenav img{
+        width: 87%;
+    height: 69%;
+    }
+}
+
+
+
+
+.firstsection{
+    width: 100%;
+    height: 90%;
+    margin-top: 4px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+     padding: 12px 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content{
+    width: 80%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.maincontent{
+    font-size: 3rem;
+    font-weight: bold;
+    height: 24%;
+   
+    
+}
+
+.btn{
+    width: 25%;
+    height: 120%;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 34px;
+    font-size: 1.3rem;
+}
+.btn:hover{
+    background-color: rgba(255, 0, 0, 0.847);
+    transition: all 0.3s ease-in-out ;
+}
+
+@media only screen and (max-width:700px) {
+    .maincontent{
+        font-size: 2rem;
+    }
+
+  
+}
+@media only screen and (max-width:950px) {
+    .btn {
+        width: 63%;
+        height: 89%;
+        gap: 10px;
+        border-radius: 8px;
+        
+    }
+
+  
+}
+
+
+.separation{
+    height: 12px;
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+}
+
+
+.picturesection{
+    margin: 3.5rem 0;
+    width: 100%;
+    height: 60vh;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wholepictureart{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+}
+
+.contentpart{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    gap: 9px;
+
+
+}
+
+.mainelement{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+
+.picturepart{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    position: relative;
+  
+}
+.picturepart img{
+    width: 50%;
+    height: 90%;
+    position: relative; 
+    z-index: 9;
+}
+.picturepart video{
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    top: 92px;
+   
+}
+
+ @media only screen and (max-width:1200px) {
+    .picturepart img{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:1100px) {
+    .picturepart img{
+        width: 110%;
+    }
+ }
+ @media only screen and (max-width:1000px) {
+    .picturesection .wholepictureart{
+        display: flex;
+        flex-direction: column;
+    }
+    .picturesection {
+
+    height: 70vh;
+    }
+
+    .contentpart{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .picturepart{
+        width: 50%;
+        height: 50%;
+    }
+    
+     .picturepart img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .picturepart video{
+        width: 90%;
+        height: 88%;
+      top: 12px;
+    position: absolute;
+
+    } 
+    .mainelement{
+        text-align: center;
+        font-size: 2.4rem;
+    }
+}  
+
+
+@media only screen and (max-width:550px) {
+    .picturepart{
+        width: 100%;
+        height: 50%;
+    }
+    
+}
+
+
+.FrequesntQuestions{
+    margin: 3.5rem 0;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    padding: 6px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.QuestionContainer{
+   
+    width: 80%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 2px 0;
+}
+
+.firstcontainer{
+    height: 30%;
+}
+
+
+.maincontainer{
+    width: 80%;
+    height: 100%;
+    border: 1px solid rgb(86, 85, 84);
+    background-color: #242323;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 10px;
+    font-size: 15px;
+}
+.maincontainer:hover{
+    opacity: 0.9;
+    transition: all 0.3s ease-in;
+}
+
+
+.lastcontainer{
+    height: 25%;
+}
+.fn{
+    height: 70%;
+    border-radius: 6px;
+}

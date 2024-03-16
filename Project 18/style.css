@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(7, 64, 125);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todocontainer{
+    width: 40%;
+    min-height: 30%;
+    background-color: aliceblue;
+    border-radius: 12px ;
+    display: flex   ;
+    padding:20px;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.todocontainer i{
+    color:wheat;
+}
+
+.inputcontainer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.input{
+    margin: 12px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    position: relative;
+}
+.input input{
+   
+    width: 100%;
+    height: 100%;
+    border: none;
+   padding: 0 10px;
+   border-radius: 20px;
+   background-color: rgb(231, 225, 225);
+}
+.input button{
+   
+    width: 30%;
+    height: 100%;
+    border: none;
+    background-color: orangered;
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    color: whitesmoke;
+}
+.input button:hover{
+  
+    background-color: rgb(204, 101, 63);
+    transition: all 0.3s linear;
+}
+
+.notesinputcont{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.data{
+    width: 90%;
+    height: 100%;
+    padding: 0 5px ;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    justify-content: flex-start;
+
+    flex-wrap: nowrap;
+
+}
+
+
+
+.righthand i{
+    display: none;
+}
+.righthand{
+
+    width:30px;
+    height: 30px;
+    border: 2px solid rgba(108, 106, 106, 0.495);
+    border-radius: 50%;
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.orangehand{
+    background-color: orangered;
+    transition: all 0.2s linear;
+}
+
+
+.dataend{
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+.dataend i{
+    color: black;
+}
+.dataend:hover{
+    background-color: rgba(194, 194, 194, 0.639);
+  transition: all 0.3s linear;
+}

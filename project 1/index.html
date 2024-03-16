@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greek Fitness Gym</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+   body{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: white;
+     margin: 0px ;
+     padding: 0px;
+     background: url('image/pexels-cottonbro-4761352.jpg') no-repeat center center/cover ;
+   }
+  .left{
+    text-align: center;
+   
+    display: inline-block;
+    position: absolute;
+      left: 79px;
+      top: 44px;
+      
+
+  }
+  .mid{
+    display: block;
+    width: 62%;
+    margin: 70px auto;
+  
+  }
+  .right{
+    font-family: 'Alegreya Sans SC', sans-serif;
+      display: inline-block; 
+      position: absolute;
+      right: 79px;
+      top: 89px;
+  }
+  .navbar{
+    box-sizing: border-box;
+    display: inline-block;
+  }
+  .navbar li{
+    display: inline-block ;
+    padding: 20px 50px ;
+  }
+  .navbar li a{
+    display: inline-block ;
+   
+    color: white;
+    text-decoration: none;
+    padding: 22px 111px;
+    font-size: 56px;
+    font-weight: bold;
+}
+.navbar li a:hover, .navbar li a.active{
+   text-decoration: underline;
+   color: grey;
+}
+.left img{
+ 
+   filter: invert(100%);
+   width: 202px;
+  
+}
+.left div{
+  text-align: center;
+  font-size: 59px;
+  
+  line-height: 16px;
+}
+.btn{
+  margin: 7px 10px ;
+  color: white;
+  background-color: black;
+  padding: 21px 63px ;
+  border: 2px solid rgb(133 133 141);
+  border-radius: 30px ;
+  font-size: 34px ;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: grey;
+  color: darkgrey;
+  text-decoration: underline;
+}
+.container{
+  border: 2px solid white;
+  border-radius: 30px ;
+  margin: 278px 104px;
+  padding: 190px 134px;
+  width: 33%;
+}
+h1{
+  font-size: 70px;
+}
+.formgroup{
+  width: 100px;
+  margin: 2px 3px ;
+  padding: 2px 3px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+
+}
+.formgroup input{
+  width: 522px;
+padding: 28px 38px;
+margin: 5px 12px;
+font-size: 39px;
+font-family: 'Alegreya Sans SC', sans-serif;
+border-radius: 15px;
+text-align: center;
+}
+#real{
+  margin: 13px 200px;
+}
+    </style>
+<body>
+    <header class="header">
+      <div class="left">
+       <img src="image/istockphoto-1331186720-612x612.jpg" alt="">
+        <div>Greek fitnes Gym</div>
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+            <li> <a href="#" class="active">Home</a></li>
+            <li> <a href="#">About</a>  </li>
+            <li> <a href="#">Fitness Services</a>  </li>
+            <li> <a href="#">Contact us</a>  </li>
+        </ul>
+    </div>
+    <div class="right">
+      <button class="btn">Sign in</button>
+      <button class="btn"> Email us</button>
+      </div>
+    </header>
+    <div class="container">
+       <h1>Please Fill the Form to Join our Gym </h1>
+       <form action="noaction to php">
+        <div class="formgroup">
+          <input type="text" placeholder="Enter your Name">
+        </div>
+        <div class="formgroup">
+          <input type="number" placeholder="Enter your Age">
+        </div>
+        <div class="formgroup">
+          <input type="text" placeholder="Enter your Gender">
+        </div>
+        <div class="formgroup">
+          <input type="date" placeholder="Enter your Birth">
+        </div>
+        <button class="btn" id="real">Submit</button>
+       </form>
+    </div>
+</body>
+</html>
